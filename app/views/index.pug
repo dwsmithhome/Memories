@@ -58,7 +58,7 @@ html(lang="en")
 
   script.
     var map;
-    var superchargers = !{data};
+    var soldiers = !{data};
 
     function initMap() {
       map = new google.maps.Map(document.getElementById('map'), {
@@ -339,7 +339,7 @@ html(lang="en")
         ]
       });
 
-      superchargers.forEach(function(sc) {
+      soldiers.forEach(function(sc) {
         var marker = new google.maps.Marker({
           position: new google.maps.LatLng(sc._source.location.lat, sc._source.location.lon),
           icon: {
